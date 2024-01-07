@@ -12,6 +12,10 @@ body{
     align-items: center;
     min-height: 100vh;
 }
+p{
+    text-align: justify;
+    text-justify: auto;
+}
 .contanier{
     position: relative;
     width: 100%;
@@ -217,4 +221,20 @@ p{
     .skills .box{
         grid-template-columns: repeat(1,1fr);
     }
+  }
+
+  @media (max-width: 300px) {
+    .about .box{
+        flex-direction: column;
+    }
+    .about .box .year_company{
+        margin-bottom: 5px;
+    }
+    .interest ul{
+      grid-template-columns: repeat(1,1fr);
+  }
+  .skills .box{
+      grid-template-columns: repeat(1,1fr);
+  }
+    
   }
